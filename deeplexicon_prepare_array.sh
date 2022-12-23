@@ -256,7 +256,7 @@ if [[ \$nr_failed -gt 0 ]]; then
 	echo \"The following jobs failed, please make sure they run succesfully before continuing\"
 	find ${output_folder}/log_1/ -iname \"*.failed\" -type f
 	exit
-elif [[ \$nr_jobs -eq \$nr_done ]]; then
+elif [[ ! \$nr_jobs -eq \$nr_done ]]; then
 	echo \"Not all jobs seem to be finished succesfully, please check this first!\"
 	exit
 fi
