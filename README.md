@@ -9,7 +9,11 @@ https://github.com/Psy-Fer/deeplexicon
 The script currently assumes a slurm cluster and singularity images.
 
 The docker image can be downloaded from: https://hub.docker.com/r/lpryszcz/deeplexicon
-Pull as a singularity img: singularity pull docker://lpryszcz/deeplexicon:1.2.0
+
+Pull as a singularity img: 
+```
+singularity pull docker://lpryszcz/deeplexicon:1.2.0
+```
 
 Adjust the following lines in the script to match the final location of the singularity img and mail address to be used for job information.
 
